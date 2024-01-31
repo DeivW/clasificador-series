@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="601.0" minWidth="681.0" prefHeight="601.0" prefWidth="690.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tsbfrc.clases.MainController">
+   <children>
+      <Label layoutX="180.0" layoutY="7.0" text="SERIES POR GENERO" textFill="#f6c700">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbGeneros" layoutX="359.0" layoutY="104.0" prefWidth="150.0" />
+      <Button fx:id="btnSeleccionar" layoutX="523.0" layoutY="104.0" mnemonicParsing="false" onMouseClicked="#seleccionarGenero" text="Seleccionar" />
+      <Button fx:id="btnCantidad" layoutX="96.0" layoutY="205.0" mnemonicParsing="false" onMouseClicked="#mostrarCantidad" prefHeight="26.0" prefWidth="150.0" text="Cantidad de Series" />
+      <Button fx:id="btnDetalle" layoutX="275.0" layoutY="205.0" mnemonicParsing="false" onMouseClicked="#mostrarSeries" prefHeight="26.0" prefWidth="150.0" text="Detalle de Series" />
+      <Button fx:id="btnPuntuacion" layoutX="449.0" layoutY="205.0" mnemonicParsing="false" onMouseClicked="#mostrarCantPorPuntuacion" prefHeight="26.0" prefWidth="150.0" text="Cantidad por Puntuación" />
+      <Label layoutX="96.0" layoutY="102.0" text="SELECCIONE UN GENERO:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="156.0" text="SELECCIONE UNA OPCION" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lvSeries" layoutX="100.0" layoutY="300.0" prefHeight="258.0" prefWidth="490.0" />
+      <Label fx:id="lblResultado" layoutX="105.0" layoutY="269.0" onMouseClicked="#cambiarOrigenDatos" text="Resultado" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrigenDatos" layoutX="14.0" layoutY="57.0" text="Origen de datos: " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUrl" layoutX="134.0" layoutY="57.0" prefHeight="20.0" prefWidth="398.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCambiar" layoutX="552.0" layoutY="54.0" mnemonicParsing="false" onMouseClicked="#cambiarOrigenDatos" prefHeight="2.0" prefWidth="76.0" text="Cambiar" />
+   </children>
+</AnchorPane>
